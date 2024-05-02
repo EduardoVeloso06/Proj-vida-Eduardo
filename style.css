@@ -2,7 +2,7 @@
 
 :root{
     --cor-de-fundo:  #353535;
-    --azul:#008fcc;
+    --azul:#ffffff;
     --branco:#000000;
     --botao-ativo:#b0b0b0;
     --botao-inativo:#ffffff;
@@ -10,8 +10,8 @@
 }
 
 body{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
+    background-color: var(--branco);
+    color: var(--azul);
     font-family: "chakra Petch", sans-serif;
 }
     
@@ -82,14 +82,29 @@ body{
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--branco);
+    color: var(--azul);
     text-transform: uppercase;
 }
  
 .contador{
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+.contador-digito-numero{
+ font-size: 80px;  
+ margin: 0;  
+}
+.contador-digito-texto{
+    color: var(--azul);
+}
+
+
 
 @media screen and (min-width: 768px){
     .botoes{
